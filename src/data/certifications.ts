@@ -1,0 +1,88 @@
+import { Certification } from '../types';
+
+export const certifications: Certification[] = [
+  {
+    id: 1,
+    title: 'Build AI Apps with Microsoft Azure',
+    issuer: 'Microsoft',
+    date: '2025',
+    category: 'AI/ML',
+  },
+  {
+    id: 2,
+    title: 'Microsoft Fabric for Next-Gen Data Analytics',
+    issuer: 'Microsoft',
+    date: '2025',
+    category: 'Data Analytics',
+  },
+  {
+    id: 3,
+    title: 'Microsoft 365 Copilot for Administrators',
+    issuer: 'Microsoft',
+    date: '2025',
+    category: 'Microsoft 365',
+  },
+  {
+    id: 4,
+    title: 'Manage AI Data Security Challenges with Microsoft',
+    issuer: 'Microsoft',
+    date: '2025',
+    category: 'AI/ML',
+  },
+  {
+    id: 5,
+    title: 'MySQL Basics',
+    issuer: 'Great Learning',
+    date: '2024',
+    category: 'Database',
+  },
+  {
+    id: 6,
+    title: 'Python 3.4.3',
+    issuer: 'IIT Bombay',
+    date: '2024',
+    category: 'Programming',
+  },
+  {
+    id: 7,
+    title: 'Machine Learning on Oracle Cloud',
+    issuer: 'Oracle',
+    date: '2024',
+    category: 'AI/ML',
+  },
+  {
+    id: 8,
+    title: 'Cloud Masterclass - Cloud Practitioner Essentials',
+    issuer: 'Nasscom',
+    date: '2024',
+    category: 'Cloud',
+  },
+  {
+    id: 9,
+    title: 'Java Development on Oracle Cloud',
+    issuer: 'Oracle',
+    date: '2024',
+    category: 'Programming',
+  },
+  {
+    id: 10,
+    title: 'Computer Forensics',
+    issuer: 'Coursera - INFOSEC',
+    date: '2023',
+    category: 'Security',
+  },
+  {
+    id: 11,
+    title: 'Introduction to Data Science',
+    issuer: 'Coursera - IBM',
+    date: '2023',
+    category: 'Data Science',
+  },
+  {
+    id: 12,
+    title: 'C Training',
+    issuer: 'IIT Bombay',
+    date: '2023',
+    category: 'Programming',
+  },
+];
