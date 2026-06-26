@@ -127,7 +127,7 @@ const About: React.FC = () => {
               </div>
               <div className="relative pl-6 space-y-8">
                 <div className="absolute left-0 top-0 bottom-0 w-px bg-gradient-to-b from-neon-purple to-neon-blue" />
-                
+
                 {/* Diploma in AI & ML */}
                 <div className="relative">
                   <div className="absolute -left-[25px] top-1.5 w-3 h-3 rounded-full bg-neon-purple border-2 border-background animate-pulse" />
@@ -145,6 +145,7 @@ const About: React.FC = () => {
                   <div className="mb-1">
                     <h4 className="text-white font-semibold">Bachelor of Science in Computer Technology</h4>
                     <p className="text-neon-blue text-sm font-mono">Sri Krishna Arts and Science College</p>
+                    <p className="text-white/60 text-xs mt-0.5">Coimbatore, Tamil Nadu</p>
                     <p className="text-white/40 text-xs mt-1 font-mono">Graduated: 2025</p>
                   </div>
                   <div className="text-white/60 text-sm mt-3">
