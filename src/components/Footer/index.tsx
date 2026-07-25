@@ -15,7 +15,7 @@ const navLinks = [
 
 const socialLinks = [
   { icon: FiGithub, href: 'https://github.com/SrivatsanMK', label: 'GitHub' },
-  { icon: HiMail, href: 'mailto:srivatsanmk@email.com', label: 'Email' },
+  { icon: HiMail, href: 'mailto:srivatsanmk2004@gmail.com', label: 'Email' },
 ];
 
 const Footer: React.FC = () => {

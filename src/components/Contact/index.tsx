@@ -76,10 +76,19 @@ const Contact: React.FC = () => {
     setIsSubmitting(true);
     setSubmitError(null);
     try {
-      await emailjs.sendForm(
+      await emailjs.send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID || '',
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID || '',
-        e.currentTarget,
+        {
+          name: formData.name,
+          from_name: formData.name,
+          email: formData.email,
+          from_email: formData.email,
+          reply_to: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          to_email: 'srivatsanmk2004@gmail.com',
+        },
         {
           publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY || '',
         }
