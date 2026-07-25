@@ -75,10 +75,15 @@ const Contact: React.FC = () => {
 
     setIsSubmitting(true);
     setSubmitError(null);
+
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID || 'service_k7kmt1b';
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'template_2c4gz3p';
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'Eo4N0kfYRwsNb_3bo';
+
     try {
       await emailjs.send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID || '',
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID || '',
+        serviceId,
+        templateId,
         {
           name: formData.name,
           from_name: formData.name,
@@ -89,15 +94,13 @@ const Contact: React.FC = () => {
           message: formData.message,
           to_email: 'srivatsanmk2004@gmail.com',
         },
-        {
-          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY || '',
-        }
+        publicKey
       );
       setIsSuccess(true);
       setFormData({ name: '', email: '', subject: '', message: '' });
       setTimeout(() => setIsSuccess(false), 5000);
     } catch (error) {
-      console.error('Failed to send message:', error);
+      console.error('Failed to send message via EmailJS:', error);
       setSubmitError('Failed to send message. Please try again later.');
     } finally {
       setIsSubmitting(false);
