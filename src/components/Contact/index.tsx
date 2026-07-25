@@ -23,8 +23,8 @@ const contactInfo = [
   {
     icon: HiMail,
     label: 'Email',
-    value: 'srivatsanmk@email.com',
-    href: 'mailto:srivatsanmk@email.com',
+    value: 'srivatsanmk2004@gmail.com',
+    href: 'mailto:srivatsanmk2004@gmail.com',
     color: '#00D4FF',
   },
   {

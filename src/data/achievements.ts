@@ -45,8 +45,8 @@ export const achievementCards = [
   },
   {
     icon: '☁️',
-    title: '3x Microsoft Certified',
-    description: 'Certified in Azure AI Services, Microsoft Fabric, and Microsoft 365 Copilot',
+    title: '4x Microsoft Certified',
+    description: 'Certified in Azure AI Services, Microsoft Fabric, Microsoft 365 Copilot and ',
     category: 'Certifications',
     color: '#7C3AED',
   },
